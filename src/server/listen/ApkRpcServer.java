@@ -94,7 +94,7 @@ public class ApkRpcServer extends Thread{
 	}
 	
 	public static void main(String[] args) throws Exception {
-		ApkRpcServer server = new ApkRpcServer("10.37.1.242", 8088);
+		ApkRpcServer server = new ApkRpcServer("*", 0);
 		server.start();
 		//System.out.println((Long.parseLong("1446018761536")-Long.parseLong("1446018736639")));
 	}
